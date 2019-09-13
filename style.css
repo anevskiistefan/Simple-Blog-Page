@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    overflow-x: hidden !important;
+}
+
+
+/* NAVIGATION BAR */
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 60px;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #27ae60;
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+
+
+  /* RIGHT SIDE DIV */
+
+  .aside-bar {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+
+
+  /* CENTERED DIV */
+
+  .content {
+      padding: 20px;
+      word-break: break-all;
+  }
+
+  .content h2 {
+      text-align: center;
+      padding: 10px 0;
+  }
+
+ .date {
+      padding: 10px 0;
+      text-align: center;
+  }
+
+
+
+
+  /* FOOTER */
+
+  footer {
+      max-width: 100%;
+      text-align: center;
+      background-color: #27ae60;
+      color: #fff;
+      padding: 10px;
+  }
+
+
+  footer a {
+      color: #17693a;
+  }
+
+  footer a:hover {
+      color: #fff;
+  }
+
+  .icons {
+      margin-left: 5px;
+      margin-top: 10px;
+  }
+
+
+
+
+  /* MEDIA QUERIES */
+  
+  @media screen and (min-width: 320px) {
+    .topnav a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      } 
+  }
+
+
+  @media screen and (min-width: 360px) {
+    .topnav a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+  }
+
+
+  @media screen and (min-width: 411px) {
+    body {
+        max-width: 100%;
+    }
+  
+    /* Style the hamburger menu */
+  .topnav a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  }
+
+  @media screen and (min-width: 768px) {
+      footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+      }
+  }
+
+  @media screen and (min-width:1349px) { 
+
+    .container {
+        padding: 100px 50px;
+    }
+
+    .aside-bar {
+        width: 20%; 
+        float: right;
+    }
+
+    .aside-content p {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .aside-content a {
+        text-decoration: none;
+    }
+
+    .content {
+        width: 80%;
+        justify-self: flex-start;
+        margin: 0;
+    }
+
+    .content p {
+        line-height: 150%;
+        font-size: 1.1rem;
+    }
+
+    .date {
+        text-align: left;
+        padding: 30px 0;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        text-align: center;
+        padding: 10px;
+        background-color: #27ae60;
+        color: #fff;
+    }
+
+    .icons {
+        color: #145b32;
+        margin-left: 10px;
+        padding-top: 15px;
+    }
+    
+    .icons:hover {
+        color: #fff;
+    }
+    
+  }
